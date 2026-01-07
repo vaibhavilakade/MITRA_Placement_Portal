@@ -33,17 +33,5 @@ git clone https://github.com/vaibhavilakade/MITRA_Placement_Portal.git
 
 ## 📸 Screenshots
 
-### 🔐 Login Page
-![Login Page](Screenshot 2025-04-03 210835.png)
-
-### 📊 Admin Dashboard
-![Admin Dashboard](Admin%20Dashboard.png)
-
-### 👨‍🎓 Student Login
-![Student Login](Student%20Login.png)
-
-### 📘 Student Dashboard
-![Student Dashboard](Student%20Dashboard.png)
-
 ### 🖼️ Home / Main Page
-![Home Screenshot](Screenshot%202025-04-03%20210835.png)
+![Home Screenshot](Screenshot 2025-04-03 210835.png)
