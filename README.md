@@ -31,7 +31,3 @@ A web-based placement portal designed to streamline the placement process for st
 ```bash
 git clone https://github.com/vaibhavilakade/MITRA_Placement_Portal.git
 
-## 📸 Screenshots
-
-### 🖼️ Home / Main Page
-![Home Screenshot](https://github.com/vaibhavilakade/MITRA_Placement_Portal/blob/main/Screenshot%202025-04-03%20210835.png)
