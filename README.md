@@ -30,3 +30,20 @@ A web-based placement portal designed to streamline the placement process for st
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/vaibhavilakade/MITRA_Placement_Portal.git
+
+## 📸 Screenshots
+
+### 🔐 Admin Login
+![Admin Login](Admin%20Login.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](Admin%20Dashboard.png)
+
+### 👨‍🎓 Student Login
+![Student Login](Student%20Login.png)
+
+### 📘 Student Dashboard
+![Student Dashboard](Student%20Dashboard.png)
+
+### 🖼️ Home / Main Page
+![Home Screenshot](Screenshot%202025-04-03%20210835.png)
