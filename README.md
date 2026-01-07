@@ -34,4 +34,4 @@ git clone https://github.com/vaibhavilakade/MITRA_Placement_Portal.git
 ## 📸 Screenshots
 
 ### 🖼️ Home / Main Page
-![Home Screenshot](Screenshot%202025-04-03%20210835.png)
+![Home Screenshot](https://github.com/vaibhavilakade/MITRA_Placement_Portal/blob/main/Screenshot%202025-04-03%20210835.png)
