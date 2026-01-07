@@ -1,27 +1,32 @@
-# MITRA Placement Portal
+# 🚀 MITRA Placement Portal
 
-MITRA Placement Portal is a web-based application developed using Python Flask
-to manage placement activities for students and administrators.
+A web-based placement portal designed to streamline the placement process for students and administrators.
 
-## Features
-- Student Login & Dashboard
-- Admin Login & Dashboard
-- Placement & company data management
-- Database integration
+---
 
-## Tech Stack
-- Python (Flask)
-- HTML, CSS
-- SQLite / MySQL
+## ✨ Features
+- Student registration and login
+- Admin dashboard to manage students and companies
+- Placement eligibility checker
+- Notification system for new job openings
 
-## How to Run the Project
-1. Clone the repository
-2. Install required packages
-   pip install flask
-3. Run the application
-   python app.py
-4. Open browser and go to:
-   http://127.0.0.1:5000/
+---
 
-## Author
-Vaibhavi Lakade
+## 🛠 Tech Stack
+- *Frontend:* HTML, CSS, JavaScript, Bootstrap  
+- *Backend:* Python (Flask)  
+- *Database:* MySQL  
+
+---
+
+## 📂 Project Modules
+- Admin Module  
+- Student/User Module  
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/vaibhavilakade/MITRA_Placement_Portal.git
