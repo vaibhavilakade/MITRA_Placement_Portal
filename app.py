@@ -7,7 +7,6 @@ from werkzeug.utils import secure_filename
 from flask import Flask, render_template, request, session, url_for, redirect, flash, jsonify
 from flask_mysqldb import MySQL
 from werkzeug.security import generate_password_hash, check_password_hash
-
 app = Flask(__name__)
 
 app.secret_key = 'Pob'
@@ -69,7 +68,17 @@ def signup():
 
     return render_template('user_signup.html')
 
+#contact
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
+#about
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+#user dashboard
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == "POST":
@@ -203,9 +212,6 @@ def user_apply_job(job_id):
     return render_template('user_apply_job.html', job=job, education=education, user_email=user_email)
 
 
-
-
-
 @app.route('/user_view_applied_job_history')
 def user_view_applied_job_history():
     # Ensure the user is logged in
@@ -252,11 +258,6 @@ def delete_application(application_id):
         return jsonify({'success': True, 'message': "Application deleted successfully"})
     except Exception as e:
         return jsonify({'success': False, 'message': str(e)}), 500
-
-
-
-
-
 
 @app.route('/user_add_education', methods=['GET', 'POST'])
 def user_add_education():

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <style>
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of the page */
+    min-height: 100vh;
+    background-color: #00B074; /* Fallback color in case the image fails to load */
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("{{ url_for('static', filename='landing/img/carousel-1.jpg') }}"); /* Image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur level */
+    z-index: -1; /* Keeps it in the background */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limiting content width */
+    z-index: 1; /* Ensures the content is above the blurred image */
+    margin-top: 20px;
+    max-height: 100%;
+}
+
+
+    .about-container {
+      max-width: 900px;
+      background-color: rgb(222, 222, 222);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .about-container p {
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    .about-container h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>About PRMIT&R</h1>
+    <p>The Vidarbha Youth Welfare Society’s Prof. Ram Meghe Institute of Technology & Research, Badnera-Amravati
+      (Formerly well known as College of Engineering Badnera), is leading technological institute from central India.
+      Established in the year 1983, the institute has a prestigious standing amongst the topmost Technical Institutes of
+      Maharashtra. The Institute is approved by AICTE, New Delhi, Accredited by National Assessment and Accreditation Council
+      (NAAC), Bangalore with Grade ‘A’ & some of its UG Programmes are Accredited thrice by the National Board of Accreditation
+      (NBA), New Delhi.</p>
+
+    <p>The Institute is recognized by Directorate of Technical Education (DTE Mumbai), Govt. of Maharashtra and
+      affiliated to Sant Gadge Baba Amravati University, Amravati and is offering UG, PG and Ph.D courses in Mechanical Engineering,
+      Computer Science and Engineering, Information Technology, Electronics and Telecommunication Engineering and Civil Engineering
+      along with PG courses like MBA and MCA.</p>
+
+    <p>“Vidarbha Youth Welfare Society” was conceived to be the fountainhead of education for a
+      rural area in the year 1965. The young, dynamic & forward-looking management of PRMIT&R is carrying forward the pioneering legacy of the
+      visionary founders, who dared to dream and strived hard to achieve their seemingly impossible goals. The management team is comprised of highly
+      qualified people and stalwarts from medical, academic, legal and business fraternity. Their varied skill sets help them in coping with the evolving field of technical education.</p>
+
+    <p>The team of highly qualified and experienced academicians strives to achieve this credo under the proficient guidance of the Principal. They have an indomitable
+      spirit to nurture and educate potential professionals and bring laurels to the institute. PRMIT&R provides an excellent educational environment, infrastructure, and
+      value-oriented teaching, molding students to face modern world challenges with confidence. This makes PRMIT&R the most preferred institute of Central India.</p>
+  </div>
+</body>
+</html>

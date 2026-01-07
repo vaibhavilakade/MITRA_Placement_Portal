@@ -131,7 +131,7 @@ INSERT INTO `users` (`id`, `username`, `email`, `phone`, `address`, `password`) 
 (11, 'prashik', 'prashik@gmail.com', '7897898965', 'amravati', 'prashik'),
 (12, 'Ram Patil', 'ram@gmail.com', '7878998987', 'Amravati', 'ram123'),
 (13, 'ravi', 'ravi@gmail.com', '7878998987', 'Pune', 'scrypt:32768:8:1$DRQCYqxGLqdfnQsR$f40ced754c77158bc4de1deb74'),
-(14, 'ishan', 'ishan@gmail.com', '7878998987', 'pune', 'scrypt:32768:8:1$Lce8kS7x9LtTWjCX$31fff1f0416bc38e85dde82ee4'),
+(14, 'ishan', 'ishan@gmail.com', '7878998987', 'Pune', 'scrypt:32768:8:1$Lce8kS7x9LtTWjCX$31fff1f0416bc38e85dde82ee4'),
 (15, 'chetan', 'chetan@gmail.com', '7878998987', 'Amravati', 'chetan'),
 (16, 'ram1', 'ram1@gmail.com', '7878998955', 'Pune', 'ram1');
 

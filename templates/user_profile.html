@@ -15,61 +15,91 @@
     {% endwith %}
 
     <div class="profile-container">
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <!-- Username -->
             <div class="form-group">
                 <label for="username"><i class="fas fa-user"></i> Username</label>
                 <input type="text" class="form-control" id="username" name="username" value="{{ user['username'] }}" required>
             </div>
 
+            <!-- Email -->
             <div class="form-group">
                 <label for="email"><i class="fas fa-envelope"></i> Email</label>
                 <input type="email" class="form-control" id="email" name="email" value="{{ user['email'] }}" required>
             </div>
 
+            <!-- Phone -->
             <div class="form-group">
                 <label for="phone"><i class="fas fa-phone"></i> Phone</label>
                 <input type="text" class="form-control" id="phone" name="phone" value="{{ user['phone'] }}" required>
             </div>
 
+            <!-- Address -->
             <div class="form-group">
                 <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
                 <input type="text" class="form-control" id="address" name="address" value="{{ user['address'] }}" required>
             </div>
 
+            <!-- Password -->
             <div class="form-group">
                 <label for="password"><i class="fas fa-key"></i> Password</label>
                 <input type="password" class="form-control" id="password" name="password" value="{{ user['password'] }}" required>
-
             </div>
 
+            <!-- Skills -->
+            <div class="form-group">
+                <label for="skills"><i class="fas fa-cogs"></i> Skills</label>
+                <input type="text" class="form-control" id="skills" name="skills" placeholder="e.g. Python, HTML, SQL" value="{{ user.get('skills', '') }}">
+            </div>
+
+            <!-- Certifications -->
+            <div class="form-group">
+                <label for="certifications"><i class="fas fa-certificate"></i> Certifications</label>
+                <textarea class="form-control" id="certifications" name="certifications" rows="2" placeholder="e.g. AWS Certified, Microsoft Certified">{{ user.get('certifications', '') }}</textarea>
+            </div>
+
+            <!-- Internship -->
+            <div class="form-group">
+                <label for="internship"><i class="fas fa-briefcase"></i> Internship</label>
+                <textarea class="form-control" id="internship" name="internship" rows="2" placeholder="e.g. Web Developer Intern at XYZ Pvt Ltd">{{ user.get('internship', '') }}</textarea>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="form-group">
+                <label for="resume"><i class="fas fa-file-upload"></i> Upload Resume (PDF)</label>
+                <input type="file" class="form-control" id="resume" name="resume" accept=".pdf">
+            </div>
+
+            <!-- Submit -->
             <button type="submit" class="btn btn-success mt-3"><i class="fas fa-save"></i> Update Profile</button>
         </form>
     </div>
 </div>
 
+<!-- CSS Styles -->
 <style>
     body {
         background: #f8f9fa;
         font-family: Arial, sans-serif;
     }
     .profile-container {
-        max-width: 600px;
+        max-width: 700px;
         margin: auto;
         background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     .form-group {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
     .form-control {
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 6px;
         border: 1px solid #ccc;
     }
     .btn {
         width: 100%;
-        padding: 10px;
+        padding: 12px;
     }
 </style>
